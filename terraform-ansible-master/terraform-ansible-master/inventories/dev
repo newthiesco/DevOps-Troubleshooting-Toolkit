@@ -1,0 +1,14 @@
+# dev servers
+
+[junoon_servers]
+server1 ansible_host=18.201.123.153
+server2 ansible_host=18.202.245.37
+server3 ansible_host=34.245.184.47
+
+server1 ansible_user=ubuntu
+server2 ansible_user=ec2-user
+server3 ansible_user=ec2-user
+
+[junoon_servers:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_private_key_file=/home/ubuntu/keys/terra-key-ansible.pem
